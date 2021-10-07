@@ -7,7 +7,7 @@ tau = 0.03; % delay in s
 delay_samples = fix(tau*fs); % the delay in samples
 
 %time vector to plot impulse response
-t_ma = 1/fs:1/fs:1;
+t_ma = 1/fs:1/fs:0.2;
 
 
 %produces an impulse at zero
@@ -29,7 +29,8 @@ subplot(3,1,1)
 plot(t_ma,h_fir)
 title('FIR impulse response')
 xlabel('Time/s')
-ylabel('Amplitude')
+ylabel('Amplitude/a.u.')
+xlim([0 0.05])
 
 subplot(3,1,2)
 plot(f,20*log10(abs(h)))
@@ -59,7 +60,7 @@ subplot(3,1,1)
 plot(t_ma,h_iir)
 title('IIR impulse response')
 xlabel('Time/s')
-ylabel('Amplitude')
+ylabel('Amplitude/a.u.')
 
 subplot(3,1,2)
 plot(f2,20*log10(abs(h2)))
@@ -106,19 +107,19 @@ subplot(3,1,1)
 plot(y)
 title('Unfiltered mini-me audio')
 xlabel('Time/s')
-ylabel('Amplitude')
+ylabel('Amplitude/a.u.')
 
 subplot(3,1,2)
 plot(filtered_audio_fir)
 title('FIR mini-me audio')
 xlabel('Time/s')
-ylabel('Amplitude')
+ylabel('Amplitude/a.u.')
 
 subplot(3,1,3)
 plot(filtered_audio_iir)
 title('IIR mini-me audio')
 xlabel('Time/s')
-ylabel('Amplitude')
+ylabel('Amplitude/a.u.')
 
 
 %>> clear sound
