@@ -1,2 +1,3 @@
-### Assignment 1 - Digital signal processing
-In this assignment we had a lot of fun creating filters, signals, bounce... bounce... responses and even our own piano!
+### Assignments - Digital signal processing
+In these assignments we had a lot of fun creating filters, signals, bounce... bounce... responses and even our own piano!
+Also recreated our colleague's filter with only bits of information. Out colleague is a coffee addict so he spilled coffee over some of the specs...
